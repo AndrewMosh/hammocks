@@ -1,0 +1,555 @@
+html,
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+header {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+i {
+  color: white;
+}
+li {
+  list-style: none;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+}
+.order {
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 40px;
+}
+.order a {
+  text-align: center;
+}
+.order:hover {
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: 30px;
+}
+.navbar2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #71717179;
+  height: 70px;
+}
+.navbar2 li {
+  margin-right: 50px;
+  padding: 9px;
+}
+.navbar img {
+  display: none;
+}
+.nav-links a,
+.menu li a,
+header p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+/* NAVBAR MENU */
+.menu2 {
+  display: flex;
+  font-family: "Montserrat";
+}
+.menu {
+  display: flex;
+  font-family: "Montserrat";
+}
+.separate {
+  padding-right: 100px;
+}
+.menu li a,
+.menu li {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.menu li {
+  margin-right: 40px;
+}
+.menu li a:hover {
+  color: grey;
+}
+.menu2 a img {
+  padding-right: 180px;
+}
+.menu2 li a:hover {
+  color: #ffd000;
+}
+.menu2 li a {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.menu2 li {
+  margin-right: 70px;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+}
+.mySlides img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  bottom: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  bottom: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: rgba(92, 92, 92, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 23px;
+  padding: 12px;
+  bottom: 20%;
+  right: 0;
+  position: absolute;
+  text-align: left;
+  background-color: #00000099;
+  border-radius: 10px 0 0 10px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  width: auto;
+}
+.mySlides h1 {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 23%;
+  left: 3%;
+  z-index: 1;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 100%;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+}
+
+.active,
+.dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.text2 {
+  display: none;
+}
+
+.block1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 100px 60px 110px;
+}
+.block1 img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin-left: 50px;
+}
+.blocktext {
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+.blocktext h1 {
+  font-size: 30px;
+}
+.block2 {
+  display: flex;
+  justify-content: center;
+}
+.block2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 45px 45px 20px 45px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.block2 div p {
+  padding-top: 20px;
+}
+.txt {
+  text-align: center;
+}
+.block3 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 80px;
+}
+.block3 li {
+  margin: 30px;
+  font-size: 15px;
+  color: grey;
+  padding-top: 6px;
+}
+.block3 li:hover {
+  text-decoration: underline;
+}
+.block3 h1 {
+  margin-right: 190px;
+}
+.block4 {
+  display: flex;
+  justify-content: center;
+}
+.block4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 9px 18px 7px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  margin: 14px;
+}
+.block4 div img {
+  max-width: 100%;
+  margin: 30px;
+}
+.block4 h3,
+.block4 p,
+.block4 h4 {
+  margin: 10px 35px 10px 35px;
+}
+.block4 h4 {
+  text-align: right;
+  color: green;
+}
+@media all and (max-width: 425px) and (min-width: 320px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: url(images/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+  .navbar {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .navbar img {
+    display: flex;
+    transform: scale(0.7);
+  }
+
+  .menu2 {
+    display: none;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.937);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+    font-size: 16px;
+  }
+  .menu li {
+    margin: 0;
+    padding: 5px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  .menu li a {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    padding-left: 15px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+  .navbar2 {
+    display: none;
+  }
+  .menu li:first-child {
+    display: none;
+  }
+  .slideshow-container {
+    display: none;
+  }
+  .text2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 120px 25px 0 30px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.217);
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+  }
+  .blocktext {
+    font-size: 11px;
+    margin: 0;
+  }
+  .blocktext h4 {
+    text-align: center;
+  }
+  .block1 img {
+    margin: 0;
+  }
+  .block2 {
+    flex-direction: column-reverse;
+  }
+  .block2 div {
+    padding: 30px 20px 30px 20px;
+    margin: 10px 35px 10px 35px;
+    border-radius: 20px;
+  }
+  .dots {
+    display: none;
+  }
+  .block3 {
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+  }
+  .block3 li {
+    display: none;
+  }
+  .block3 h1 {
+    text-align: center;
+    margin: 0;
+  }
+  .block4 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 23px 10px 23px;
+  }
+}
+@media all and (max-width: 1279px) and (min-width: 426px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: url(images/1.png);
+    background-size: contain;
+  }
+  .navbar {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+  .navbar img {
+    display: flex;
+  }
+  .navbar img {
+    transform: scale(0.8);
+    padding-right: 35px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.937);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+    font-size: 25px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  .menu li a {
+    color: rgb(255, 255, 255);
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    padding-right: 30px;
+  }
+  .nav-links {
+    padding: 0;
+  }
+  .navbar2 {
+    display: none;
+  }
+  .menu li:first-child {
+    display: none;
+  }
+  .slideshow-container {
+    display: none;
+  }
+  .text2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 120px 25px 0 30px;
+    border-radius: 15px;
+    padding: 20px 0 20px 0;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.217);
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .blocktext {
+    font-size: 11px;
+    padding: 0 25px 0 30px;
+  }
+  .blocktext h4 {
+    text-align: center;
+  }
+  .block1 img {
+    padding: 0 25px 0 30px;
+  }
+}
